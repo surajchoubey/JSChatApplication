@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Chat App Citoto </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body class="bg-primary">
+        <div class="container mt-4">
+            <div class="row justify-content-center">
+                <h1 style="text-align: center;"> Group Chat Application </h1>
+                <div class="jumbotron bg-white mx-1 align-items-end justify-content-center d-flex p-5">
+                    <div class="row" id="msg-container">
+                        <div class="row" id="msgs">
+                            <!-- Messages thread go here-->
+                        </div>
+                        <div class="col-12 msg-sender justify-content-center">                            
+                            <form id="msgForm">
+                                <div class="input-group justify-content-center d-flex">
+                                    <input type="text" required class="form-control" placeholder="Enter Your Message Here" id="txtMsg">
+                                    <div class="input-group-append">
+                                    <button class="btn btn-success" onclick="scrollToBottom()" type="submit"><b>Send</b></button>
+                                    </div>
+                                </div>
+                            </form>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
